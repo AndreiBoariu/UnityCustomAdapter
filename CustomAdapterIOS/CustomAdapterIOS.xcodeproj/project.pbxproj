@@ -13,6 +13,9 @@
 		882637462CE618DC0078909D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 882637452CE618DC0078909D /* Base */; };
 		882637482CE618DF0078909D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 882637472CE618DF0078909D /* Assets.xcassets */; };
 		8826374B2CE618DF0078909D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 8826374A2CE618DF0078909D /* Base */; };
+		882637542CE625C30078909D /* ISMyTestNetworkCustomAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882637532CE625C30078909D /* ISMyTestNetworkCustomAdapter.swift */; };
+		882637562CE6262A0078909D /* ISMyTestNetworkCustomBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882637552CE6262A0078909D /* ISMyTestNetworkCustomBanner.swift */; };
+		882637582CE62C5B0078909D /* ISMyTestNetworkCustomRewardedVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882637572CE62C5B0078909D /* ISMyTestNetworkCustomRewardedVideo.swift */; };
 		B710ECF0F1E83DCAE5C87560 /* Pods_CustomAdapterIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E65D66BD5BAD0CF00976938 /* Pods_CustomAdapterIOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +30,9 @@
 		882637472CE618DF0078909D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8826374A2CE618DF0078909D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8826374C2CE618DF0078909D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		882637532CE625C30078909D /* ISMyTestNetworkCustomAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISMyTestNetworkCustomAdapter.swift; sourceTree = "<group>"; };
+		882637552CE6262A0078909D /* ISMyTestNetworkCustomBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISMyTestNetworkCustomBanner.swift; sourceTree = "<group>"; };
+		882637572CE62C5B0078909D /* ISMyTestNetworkCustomRewardedVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISMyTestNetworkCustomRewardedVideo.swift; sourceTree = "<group>"; };
 		9E65D66BD5BAD0CF00976938 /* Pods_CustomAdapterIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CustomAdapterIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -72,6 +78,7 @@
 		8826373D2CE618DC0078909D /* CustomAdapterIOS */ = {
 			isa = PBXGroup;
 			children = (
+				882637522CE6257E0078909D /* MyTestNetworkAdapter */,
 				8826373E2CE618DC0078909D /* AppDelegate.swift */,
 				882637402CE618DC0078909D /* SceneDelegate.swift */,
 				882637422CE618DC0078909D /* ViewController.swift */,
@@ -81,6 +88,16 @@
 				8826374C2CE618DF0078909D /* Info.plist */,
 			);
 			path = CustomAdapterIOS;
+			sourceTree = "<group>";
+		};
+		882637522CE6257E0078909D /* MyTestNetworkAdapter */ = {
+			isa = PBXGroup;
+			children = (
+				882637532CE625C30078909D /* ISMyTestNetworkCustomAdapter.swift */,
+				882637572CE62C5B0078909D /* ISMyTestNetworkCustomRewardedVideo.swift */,
+				882637552CE6262A0078909D /* ISMyTestNetworkCustomBanner.swift */,
+			);
+			path = MyTestNetworkAdapter;
 			sourceTree = "<group>";
 		};
 		BFE76E419FEFAC7E577AD4A5 /* Frameworks */ = {
@@ -206,7 +223,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				882637562CE6262A0078909D /* ISMyTestNetworkCustomBanner.swift in Sources */,
 				882637432CE618DC0078909D /* ViewController.swift in Sources */,
+				882637542CE625C30078909D /* ISMyTestNetworkCustomAdapter.swift in Sources */,
+				882637582CE62C5B0078909D /* ISMyTestNetworkCustomRewardedVideo.swift in Sources */,
 				8826373F2CE618DC0078909D /* AppDelegate.swift in Sources */,
 				882637412CE618DC0078909D /* SceneDelegate.swift in Sources */,
 			);
@@ -271,7 +291,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -334,7 +354,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -377,6 +397,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Unity.CustomAdapterIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -406,6 +427,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Unity.CustomAdapterIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
